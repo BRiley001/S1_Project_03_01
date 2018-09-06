@@ -1,3 +1,24 @@
+@charset "utf-8";
+
+/* the @font-face signifies that it needs to be gotten from somewhere, and the src followed by the url tells the browser where to find them */
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: grunge;
+    src: url('1942.woff') format('woff'),
+        url('1942.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('truetype');
+}
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
@@ -11,6 +32,112 @@
 
 */
 /* Structural Styles */
+/* the whole page (unless overwritten, will be (olive?) */
+html {
+    background-color: hsl(91, 8%, 56%);
+}
+
+/* the text will have an (ivory?) background*/
+body {
+    background-color: hsl(58, 31%, 84%);
+    font-family: 'Palatino Linotype', 'BookAntiqua', Palatino, serif;
+}
+
+/* the background of the text's color is black */
+header {
+    background-color: black;
+}
+
+/* the text will have no margin, but be off a little from the top, and more on its other sides */
+p {
+    margin: 0px;
+    padding: 5px 25px 25px 25px;
+}
+
+/* the text will be slightly larger, and in the center */
+body>p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* the text will look normal, be slightly smaller, be in the center, and have some distance from the top and bottom */
+address {
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 0px;
+}
+
 /* Navigation Styles */
+/* the nav elements will be the specified fonts, and have padding on the tops and bottoms */
+nav {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    padding: 10px 0px
+}
+
+/* every link that is unvisited or has been visited, will be white, have no decoration, and will have a gray background */
+nav :visited,
+nav :link {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
+
+nav :active,
+nav :hover {
+    color: hsla(0, 05, 100%, 0.7);
+    background-color: hsla(0, 0%, 42%, 0.7);
+}
+
 /* Section Styles */
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 20px 0px 10px 20px;
+}
+
+section#play1 {
+    background-color: hsl(240, 100%, 88%)
+}
+
+section#play2 {
+    background-color: hsl(25, 88%, 73%)
+}
+
+section#play3 {
+    background-color: hsl(0, 100%, 73%)
+}
+
+section#play4 {
+    background-color: hsl(296, 86%, 86%)
+}
+
+section#play1 h1 {
+    font-family: Champagne, cursive;
+}
+
+section#play2 h1 {
+    font-family: grunge, 'Times New Roman', Times, serif;
+}
+
+section#play3 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+section#play4 h1 {
+    font-family: Dobkin, cursive;
+}
+
 /* Description List Styles */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
