@@ -70,21 +70,22 @@ address {
 
 /* Navigation Styles */
 /* the nav elements will be the specified fonts, and have padding on the tops and bottoms */
-nav {
+nav a {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    padding: 10px 0px
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* every link that is unvisited or has been visited, will be white, have no decoration, and will have a gray background */
-nav :visited,
-nav :link {
+nav a:visited,
+nav a:link {
     color: white;
     text-decoration: none;
     background-color: hsla(0, 0%, 42%, 0.4);
 }
 
-nav :active,
-nav :hover {
+nav a:active,
+nav a:hover {
     color: hsla(0, 05, 100%, 0.7);
     background-color: hsla(0, 0%, 42%, 0.7);
 }
