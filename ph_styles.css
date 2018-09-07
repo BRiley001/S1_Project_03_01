@@ -97,6 +97,7 @@ section.playbill h1 {
     padding: 20px 0px 10px 20px;
 }
 
+/* sections that have the id  of play(#) will have the schosen background color */
 section#play1 {
     background-color: hsl(240, 100%, 88%)
 }
@@ -113,6 +114,7 @@ section#play4 {
     background-color: hsl(296, 86%, 86%)
 }
 
+/* headers that are nested in sections with the correct ID will have the selected font, which is being called in at the top */
 section#play1 h1 {
     font-family: Champagne, cursive;
 }
@@ -130,12 +132,14 @@ section#play4 h1 {
 }
 
 /* Description List Styles */
+/* desription terms will have the selected font and text specifications, such as font size, how thick the lettering is, and the color */
 dt {
     font-size: 1.3em;
     font-weight: bold;
     color: hsla(0, 0%, 0%, 0.4);
 }
 
+/* anything that is in the category, unless overwritten, will be slightly larger than normal, and have space on the bottom */
 dd {
     font-size: 1.3em;
     margin-left: 0px;
